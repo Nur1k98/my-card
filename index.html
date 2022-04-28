@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My phone</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+</head>
+
+<body>
+  <div class="my-phone">
+    <h1 class="my-phone__title">My Card</h1>
+    <img class="my-phone__card-img" src="./images/visa-card.png" alt="visa-card">
+    <form action="https://echo.htmlacademy.ru/" method="POST" class="my-phone__form form">
+      <ul class="form__list">
+        <li class="form__item">
+          <label class="form__label label">
+            <img class="label__icon" src="./images/lock.svg" alt="lock">
+            <span class="label__box">
+              <span class="label__heading">Lock Card</span>
+              <span class="label__text">You can unlock it later</span>
+            </span>
+            <input class="label__checkbox visually-hidden" type="checkbox">
+            <span class="label__input-controller"><span class="label__button"></span></span>
+          </label>
+        </li>
+        <li class="form__item">
+          <label class="form__label label">
+            <img class="label__icon" src="./images/plane.svg" alt="lock">
+            <span class="label__box">
+              <span class="label__heading">Payments abroad</span>
+              <span class="label__text">Enable your card abroad</span>
+            </span>
+            <input class="label__checkbox visually-hidden" type="checkbox">
+            <span class="label__input-controller"><span class="label__button"></span></span>
+          </label>
+        </li>
+        <li class="form__item">
+          <label class="form__label label">
+            <img class="label__icon" src="./images/laptop.svg" alt="lock">
+            <span class="label__box">
+              <span class="label__heading">Online payments</span>
+              <span class="label__text">Enable online transactions</span>
+            </span>
+            <input class="label__checkbox visually-hidden" type="checkbox">
+            <span class="label__input-controller"><span class="label__button"></span></span>
+          </label>
+        </li>
+        <li class="form__item">
+          <label class="form__label label">
+            <img class="label__icon" src="./images/atm.svg" alt="lock">
+            <span class="label__box">
+              <span class="label__heading">ATM withdrawals</span>
+              <span class="label__text">Enable ATM withdrawals</span>
+            </span>
+            <input class="label__checkbox visually-hidden" type="checkbox">
+            <span class="label__input-controller"><span class="label__button"></span></span>
+          </label>
+        </li>
+      </ul>
+    </form>
+  </div>
+</body>
+
+</html>

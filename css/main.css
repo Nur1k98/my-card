@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+.my-phone {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  height: 1250px;
+  margin: auto;
+  padding-top: 150px;
+  background-color: rgb(238, 236, 236);
+  background-image: url("../images/phone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.my-phone__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.my-phone__card-img {
+  display: block;
+  width: 450px;
+  height: 284px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.form__list {
+  margin: 0;
+  padding: 50px 20px 20px 20px;
+  list-style-type: none;
+}
+
+.form__item {
+  margin-bottom: 40px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.label__icon {
+  width: 45px;
+  height: 35px;
+  margin-right: 50px;
+}
+
+.label__box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label__heading {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: #291313;
+}
+
+.label__text {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 400;
+  color: #ABADB0;
+}
+
+.label__input-controller {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  border: 2px solid #c5c3c3;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+}
+
+.label__button {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #E3E3E3;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: 0.5s ease;
+}
+
+.label__checkbox:checked~.label__input-controller {
+  background-color: rgb(0, 162, 108);
+}
+
+.label__checkbox:checked~.label__input-controller>.label__button {
+  transform: translateX(30px);
+  border-color: rgb(0, 162, 108);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
